@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>输入框与导航</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<style>
+	</style>
+</head>
+<body style="margin:100px;">
+	<div class="input-group input-group-lg">
+	<span class="input-group-addon">@</span>
+	<input type="text" class="form-control">
+	</div>
+	<div class="input-group input-group-xs">
+	
+	<input type="text" class="form-control">
+	<span class="input-group-addon">@163.com</span>
+	</div>
+	<div class="input-group input-group-sm">
+	<span class="input-group-addon">search</span>
+	<input type="text" class="form-control">
+	<span class="input-group-addon">@</span>
+	</div>
+	<br>
+	<div class="input-group ">
+	
+	<span class="input-group-addon" ><input type="checkbox" ></span>
+	<input type="text" class="form-control">
+	</div>
+	<div class="input-group ">
+	<span class="input-group-addon" ><input type="radio" ></span>
+	<input type="text" class="form-control">
+	</div>
+	<div class="input-group ">
+	<span class="input-group-btn" >
+	<button type="button" class="btn btn-default">click</button>
+	</span>
+	<input type="text" class="form-control">
+	</div>
+	<br>
+		<div class="input-group ">
+	
+	<div class="input-group-btn " >
+		<button class="btn btn-defaul dropdown-toggle" data-toggle="dropdown">
+			下拉菜单
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li class="dropdown-header">导航</li>
+			<li class="divider"></li>
+			<li><a href="#">one</a></li>
+			<li><a href="#">two</a></li>
+			<li><a href="#">three</a></li>
+			<li class="disabled"><a href="#">about</a></li>
+		</ul>
+	</div>	
+	<input type="text" class="form-control">
+	</div>
+	<br>
+	<div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">main</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+		<ul class="nav nav-pills">
+			<li class="active"><a href="#">main</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="#">main</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+			<ul class="nav nav-pills nav-justified">
+			<li class="active"><a href="#">main</a></li>
+			<li><a href="#">1</a></li>
+			<li class="disabled"><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">main</a></li>
+			<li><a href="#">1</a></li>
+			<li class="dropdown" >
+				   <a href="#" data-toggle="dropdown">2
+				   <span class="caret"></span>
+				   </a>
+				<ul class="dropdown-menu">
+					<li class="dropdown-header">导航</li>
+					<li class="divider"></li>
+					<li><a href="#">one</a></li>
+					<li><a href="#">two</a></li>
+					<li><a href="#">three</a></li>
+					<li class="disabled"><a href="#">about</a></li>
+			    </ul>
+			</li>
+			<li><a href="#">3</a></li>
+		</ul>
+	</div>
+	<nav class="navbar navbar-default">导航</nav>
+	<nav class="navbar navbar-inverse" style="color:white;">导航</nav>
+	<nav class="navbar navbar-default navbar-fixed-top" style="color:white;">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">header</a>
+			</div>
+			<ul class="nav navbar-nav">
+					<li class="active"><a href="#">main</a></li>
+					<li><a href="#">main</a></li>
+					<li class="disabled"><a href="#">main</a></li>
+					<li><a href="#">main</a></li>
+			</ul>
+			<form action="" class="navbar-form navbar-right">
+					<div class="input-group">
+						<input type="text" class="form-control">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-default">submit</button>
+						</span>
+					</div>
+			</form>
+			<button  class="btn btn-default navbar-btn navbar-right">button</button>
+			<p class="navbar-text">text..... <a href="#" class="navbar-link">link</a></p>
+		
+		</div>
+	</nav>
+<p>1</p><p>2</p><p>3</p><p>4</p><p>1</p><p>1</p><p>1</p><p>1</p>
+<script src="../bootstrap/js/jquery.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

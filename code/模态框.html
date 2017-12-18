@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>modal</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<style>
+	</style>
+
+</head>
+<body style="margin:100px;">
+<div class="modal " id="mymodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="botton" class="close" data-dismiss="modal">
+				<span>&times;</span>
+			</button>
+			<h4 class="modal-title">会员登录</h4>
+		</div>
+		<div class="modal-body">
+			<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">1</div>
+						<div class="col-md-6">2</div>
+					</div>
+				</div>	
+		</div>
+		 <div class="modal-footer">
+		 <button class="btn btn-default">sign up</button>
+		 <button class="btn btn-primary">log in</button>
+		</div>
+		</div>	
+	</div>
+</div>
+<!-- <button class="btn btn-primary btn-lg" type="button" data-toggle="modal" data-target="#mymodal" >click me</button> -->
+<button class="btn btn-primary btn-lg" type="button" id="btn" >click me</button>
+<script src="../bootstrap/js/jquery.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+	$('#btn').on('click',function(){
+		$('#mymodal').modal('show');
+	});
+	$('#mymodal').modal({
+	  show:false,
+	 
+	});
+	$('#mymodal').on('show.bs.modal',function(){
+		alert('调用show方法立刻触发');
+	});
+	$('#mymodal').on('shown.bs.modal',function(){
+		alert('窗口出现立刻触发');
+	});
+		$('#mymodal').on('hide.bs.modal',function(){
+		alert('调用hide立刻触发');
+	});
+	$('#mymodal').on('hidden.bs.modal',function(){
+	alert('窗口关闭立刻触发');
+	});
+		$('#mymodal').on('loaded.bs.modal',function(){
+	alert('远程加载立刻触发');
+	});
+</script>
+</body>
+</html>
