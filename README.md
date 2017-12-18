@@ -1,1 +1,1 @@
-# Welcome to Chen's Capital!
+# Welcome to Chen's Blog!
