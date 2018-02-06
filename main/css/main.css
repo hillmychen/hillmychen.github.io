@@ -1,0 +1,146 @@
+@charset "utf-8"
+html,body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0; 
+	box-sizing:border-box;
+	font:14px ;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color:inherit;
+}
+#h_container{
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height:100%;
+	background: url('../img/inlogia.jpg' ) no-repeat center center; 
+	background-size: cover;
+	display: block;
+	top: 0;
+	left: 0;
+}
+#code_stock{
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width:auto;
+	height: auto;
+	margin-left:-80px;
+}
+#code_stock span{
+	color: #fff;
+	font-family: "Futura W01 Book", georgia, sans-serif;
+	letter-spacing: 3px;
+	font-weight: 300;
+	font-size: 1rem;
+	display:block;
+	float: left;
+	padding:0 10px;
+	text-transform: uppercase;
+	opacity: .85;
+
+}
+#coder{
+	 
+	border-right:1px solid #fff;
+	
+}
+#stocker{
+	margin-left: 0;
+}
+#logo{
+	background: url('../img/LOGO.png') no-repeat center center;
+	background-size: cover;
+	width:50%;
+	height:35%;
+	z-index: 1000;
+	opacity:1;
+	position: absolute;
+	top: 22%;
+	left: 25%;
+}
+#github{
+	height: 30px;
+	right: 0;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	background: #a59779;
+	width:180px;
+	text-align: center;
+	transform: rotateZ(45deg) translate(53px);
+	-webkit-transform: rotateZ(45deg) translate(53px);
+	-moz-transform: rotateZ(45deg) translate(53px);
+	-ms-transform: rotateZ(45deg) translate(53px);
+	cursor: pointer;
+}
+#github a{
+	    vertical-align: middle;
+	    font-weight: 500;
+	    font-size:1rem;
+	    color: white;
+	    line-height: 30px;
+}
+#nav-banner {
+	position:fixed;
+	top:75%;
+	height: 90px;
+	width: 80%;
+	margin:0 10%;
+}
+#nav-banner ul{
+	height:100%;
+	width: 100%;
+}
+#nav-banner ul li{
+	display: inline-block;
+	float:left;
+	height:100%;
+	width: 17%;
+	
+	padding-right:8%;
+	
+	cursor: pointer;
+	
+}
+.number{
+	    font-family: "MaisonNeue-Bold", sans-serif;
+	    font-size: 50px;
+	    color: #cdb586;
+	    opacity: .7;
+	    text-align:center;
+	    vertical-align:sub;
+	    line-height:50px;
+	    display:block;
+	    position: relative;
+	   width: 80%;
+    	height: 60%;
+}
+.number>b{
+	color: #cdb586;
+	font-size: 1.1rem;
+	position: absolute;
+	top: 20%;
+    left: 28%;
+    font-weight: lighter;
+}
+.number~span{
+	font-family:"Futura W01 Heavy", arial, sans-serif;
+	font-size: 1.5rem;
+	text-align: left;
+	color: #bfbaa2;
+	display: block;
+	width: 75%;
+	height: 40%;
+	border-top: 2px solid #6b6b6b;
+	margin-left: -15%;
+    letter-spacing: 2px;
+    margin-top: 2.3%;
+   padding-top:4%;
+}
