@@ -19,11 +19,12 @@ a{
 	position: fixed;
 	width: 100%;
 	height:100%;
-	background: url('../img/inlogia.jpg' ) no-repeat center center; 
+	background: url('../img/inlogia.png' ) no-repeat center center; 
 	background-size: cover;
 	display: block;
 	top: 0;
 	left: 0;
+
 }
 #code_stock{
 	position: absolute;
@@ -55,7 +56,7 @@ a{
 	margin-left: 0;
 }
 #logo{
-	background: url('../img/LOGO.png') no-repeat center center;
+	background: url('../img/logo.png') no-repeat center center;
 	background-size: cover;
 	width:50%;
 	height:35%;
@@ -64,14 +65,29 @@ a{
 	position: absolute;
 	top: 22%;
 	left: 25%;
+	cursor: pointer;
+	transition: all .4s ease-in;
+}
+#logo:hover
+{
+	background: url('../img/logoPink.png') no-repeat center center;
+	background-size: cover;
+	width:50%;
+	height:35%;
+	z-index: 1000;
+	opacity:1;
+	position: absolute;
+	top: 21%;
+	left: 25%;
 }
 #github{
-	height: 30px;
+	height: 25px;
 	right: 0;
 	text-transform: uppercase;
 	position: fixed;
 	top: 0;
-	background: #a59779;
+	background: #b3a78f;
+	opacity: .8;
 	width:180px;
 	text-align: center;
 	transform: rotateZ(45deg) translate(53px);
@@ -80,19 +96,23 @@ a{
 	-ms-transform: rotateZ(45deg) translate(53px);
 	cursor: pointer;
 }
+#github:hover{
+	background: #b5ab97;
+	opacity: 1;
+}
 #github a{
 	    vertical-align: middle;
 	    font-weight: 500;
-	    font-size:1rem;
+	    font-size:0.8rem;
 	    color: white;
-	    line-height: 30px;
+	    line-height: 25px;
 }
 #nav-banner {
 	position:fixed;
 	top:75%;
 	height: 90px;
 	width: 80%;
-	margin:0 10%;
+	margin:0 15%;
 }
 #nav-banner ul{
 	height:100%;
@@ -101,27 +121,66 @@ a{
 #nav-banner ul li{
 	display: inline-block;
 	float:left;
-	height:100%;
-	width: 17%;
-	
+	height:95px;
+	width: 130px;
 	padding-right:8%;
-	
 	cursor: pointer;
-	
 }
+@keyframes slide{
+	from{
+      left: 28%;
+      color: #cdb586;
+	}
+	to{
+	  left: 13%;
+	  color:#ffe4b0;
+	}
+}
+@-webkit-keyframes slide{
+	from{
+      left: 28%;
+      color: #cdb586;
+	}
+	to{
+	  left: 13%;
+	  color:#ffe4b0;
+	}
+}
+@-moz-keyframes slide{
+	from{
+      left: 28%;
+      color: #cdb586;
+	}
+	to{
+	  left: 13%;
+	  color:#ffe4b0;
+	}
+}
+#nav-banner ul li:hover b{
+	animation: .4s  ease 0s slide forwards;
+	-webkit-animation: .4s  ease 0s slide forwards;
+	-moz-animation: .4s  ease 0s slide forwards;
+}
+
 .number{
-	    font-family: "MaisonNeue-Bold", sans-serif;
-	    font-size: 50px;
-	    color: #cdb586;
-	    opacity: .7;
-	    text-align:center;
-	    vertical-align:sub;
-	    line-height:50px;
-	    display:block;
-	    position: relative;
-	   width: 80%;
-    	height: 60%;
+    font-family: "MaisonNeue-Bold", sans-serif;
+    font-size: 50px;
+    color: #f1d7a6;
+    opacity: .7;
+    text-align:center;
+    vertical-align:sub;
+    line-height:50px;
+    display:block;
+    position: relative;
+    width: 80%;
+	height: 60%;
+	transition: all .4s ease;
 }
+#nav-banner ul li:hover .number{
+	color:#ffe4b0;
+	opacity: 1;
+}
+
 .number>b{
 	color: #cdb586;
 	font-size: 1.1rem;
@@ -129,18 +188,55 @@ a{
 	top: 20%;
     left: 28%;
     font-weight: lighter;
+    transform: rotateZ(15deg);
 }
 .number~span{
 	font-family:"Futura W01 Heavy", arial, sans-serif;
 	font-size: 1.5rem;
 	text-align: left;
-	color: #bfbaa2;
+	color: #9a958c;
 	display: block;
 	width: 75%;
 	height: 40%;
-	border-top: 2px solid #6b6b6b;
 	margin-left: -15%;
     letter-spacing: 2px;
     margin-top: 2.3%;
-   padding-top:4%;
+    padding-top:4%;
+    transition: all .3s ease-in;
+    position: relative;
+    border-top: 2px solid;
+    border-image:linear-gradient(to right,#a7946f 68%,rgba(204,179,130,.5)32%) 1 0;
+    border-image:-webkit-linear-gradient(to right,#a7946f 68%,rgba(204,179,130,.5)32%) 1 0;
+    border-image:-moz-linear-gradient(to right,#a7946f 68%,rgba(204,179,130,.5)32%) 1 0;
+    border-image:-ms-linear-gradient(to right,#a7946f 68%,rgba(204,179,130,.5)32%) 1 0;
+    position: relative;
+    overflow-x: hidden;
+}
+#nav-banner ul li:hover .number~span{
+	color:#e6e3e3; 
+	border-top: 0px;
+}
+.number~span::before{
+	content: "";
+	display: table;
+	position: absolute;
+	height: 0;
+	width:100%;
+	top:0px;
+	left: -30px;
+	background:#ffe4b0;
+	opacity: 0;
+}
+#nav-banner ul li:hover .number~span::before{
+	height: 2px;
+	opacity: 1;
+	background:#ffe4b0;
+	transform: translateX(30px);
+	transition: transform .4s ease-in;
+	-webkit-transform: translateX(30px);
+	-webkit-transition: transform .4s ease-in;
+	-moz-transform: translateX(30px);
+	-moz-transition: transform .4s ease-in;
+	-ms-transform: translateX(30px);
+	-ms-transition: transform .4s ease-in;
 }
