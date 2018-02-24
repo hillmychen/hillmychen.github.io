@@ -1,5 +1,5 @@
-@charset "utf-8"
-*{
+@charset "utf-8";
+* {
 	box-sizing:border-box;
 }
 html,body,ul,li,div,section{
@@ -17,6 +17,10 @@ ul li{
 a{
 	text-decoration: none;
 	color:inherit;
+}
+a:focus,a:hover{
+	text-decoration: none;
+	color: inherit;
 }
 #h_container{
 	overflow: hidden;
@@ -36,7 +40,7 @@ a{
 	left: 50%;
 	width:auto;
 	height: auto;
-	margin-left:-80px;
+	margin-left: -65px;
 }
 #code_stock span{
 	color: #fff;
@@ -59,29 +63,19 @@ a{
 	margin-left: 0;
 }
 #logo{
-	background: url('../img/logo.png') no-repeat center center;
-	background-size: cover;
-	width:50%;
-	height:35%;
+	display: block;
+	width:100%;
 	z-index: 1000;
 	opacity:1;
 	position: absolute;
 	top: 22%;
-	left: 25%;
 	cursor: pointer;
 	transition: all .4s ease-in;
 }
 #logo:hover
 {
-	background: url('../img/logoPink.png') no-repeat center center;
-	background-size: cover;
-	width:50%;
-	height:35%;
-	z-index: 1000;
 	opacity:1;
-	position: absolute;
 	top: 21%;
-	left: 25%;
 }
 #github{
 	height: 25px;
@@ -116,8 +110,9 @@ a{
 	top:75%;
 	height: 90px;
 	width: 80%;
-	margin:0 15%;
+	margin: 0 10%;
 	z-index: 2;
+	display: none;
 }
 #nav-banner ul{
 	height:100%;
@@ -127,7 +122,7 @@ a{
 	display: inline-block;
 	float:left;
 	height:95px;
-	width: 130px;
+	width: 25%;
 	padding-left: 9%;
 	cursor: pointer;
 }
@@ -264,8 +259,8 @@ section>#image_content{
 section>#image_content ul{
 	width: 84%;
 	height: auto;
-	margin:0;
-	padding:0 8%;
+    margin: 0 8%;
+    padding: 0;
 	float: left;
 }
 section>#image_content ul li{
@@ -385,7 +380,7 @@ section>#image_content ul li{
 }
 #m_footer div span+.info_text{
 	font-family: 'Futura W01 Book',
-	Arial,"微软雅黑",
+	Arial,"å¾®è½¯é›…é»‘",
 	sans-serif;
 	font-weight: normal;
 	font-size: .8rem;

@@ -1,0 +1,21 @@
+@charset "utf-8";
+@media screen and (min-width:768px){
+    #logo{
+        width: 80%;
+        margin-left:10%;
+    }
+}
+@media screen and (min-width:960px){
+    #nav-banner{
+        display:block;
+    }
+    #logo{
+        width: 60%;
+        margin-left:20%;
+    }
+}
+@media screen and (min-width:1200px){
+    #nav-banner{
+        display:block;
+    }
+}

@@ -6,4 +6,9 @@ $(function(){
                 $("footer").slideUp(500);
             }
     });
+    $('#logo').hover(function(){
+        $(this).attr('src','main/img/logoPink.png');
+    },function(){
+        $(this).attr('src','main/img/logo.png');
+    });
 });
