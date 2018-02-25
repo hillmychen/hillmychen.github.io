@@ -40,7 +40,7 @@ a:focus,a:hover{
 	left: 50%;
 	width:auto;
 	height: auto;
-	margin-left: -65px;
+	margin-left: -88px;
 }
 #code_stock span{
 	color: #fff;
@@ -110,9 +110,13 @@ a:focus,a:hover{
 	top:75%;
 	height: 90px;
 	width: 80%;
-	margin: 0 10%;
 	z-index: 2;
-	display: none;
+	background: transparent;
+	border: none;
+}
+#nav-banner .row{
+	height:100%;
+	width: 100%;
 }
 #nav-banner ul{
 	height:100%;
@@ -121,9 +125,6 @@ a:focus,a:hover{
 #nav-banner ul li{
 	display: inline-block;
 	float:left;
-	height:95px;
-	width: 25%;
-	padding-left: 9%;
 	cursor: pointer;
 }
 @keyframes slide{
@@ -161,10 +162,9 @@ a:focus,a:hover{
 	-webkit-animation: .4s  ease 0s slide forwards;
 	-moz-animation: .4s  ease 0s slide forwards;
 }
-
 .number{
     font-family: "MaisonNeue-Bold", sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     color: #f1d7a6;
     opacity: .7;
     text-align:center;
@@ -172,7 +172,7 @@ a:focus,a:hover{
     line-height:50px;
     display:block;
     position: relative;
-    width: 80%;
+
 	height: 60%;
 	transition: all .4s ease;
 }
@@ -191,15 +191,11 @@ a:focus,a:hover{
     transform: rotateZ(15deg);
 }
 .number~span{
-	font-family:"Futura W01 Heavy", arial, sans-serif;
-	font-size: 1.5rem;
-	text-align: left;
+	font-family:"Futura W01 Heavy", arial, sans-serif;	
 	color: #9a958c;
 	display: block;
-	width: 75%;
 	height: 40%;
 	border-top: 2px solid #9e9191;
-	margin-left: -15%;
     letter-spacing: 2px;
     margin-top: 2.3%;
     padding-top:4%;
@@ -243,7 +239,7 @@ a:focus,a:hover{
 }
 #container{
 	width: 100%;
-	min-height: 1500px;
+	min-height: 1000px;
 	background:transparent;
 	margin: 0 0 250px 0;
 	padding: 0;
@@ -268,85 +264,9 @@ section>#image_content ul li{
 	cursor: pointer;
 	position: relative;
 }
-#image_content ul:first-child>li {
-	width: 50%;
-}
-#image_content ul:first-child>li img{
-	width:100%;
-	height: auto;
-	display: block;
-}
-#image_content ul:nth-child(2)>li:first-child{
-	width: 60%;
-	height: auto;
-}
-#image_content ul>li img{
-	display: block;
-}
-#image_content ul:nth-child(2)>li:first-child img{
-	height: auto;
-	width: 100%;
-}
-#image_content ul:nth-child(2)>li:nth-child(2){
-	width: 40%;
-}
-#image_content ul:nth-child(2)>li:nth-child(2) img{
-	width: 100%;
-	height: auto;
-}
-#image_content ul:nth-child(3)>li:nth-child(1) {
-	width: 40%;
-	height: auto;
-}
-#image_content ul:nth-child(3)>li:nth-child(1) img {
-	width: 100%;
-	height: auto;
-}
-#image_content ul:nth-child(3)>li:nth-child(2) {
-	width: 60%;
-	height: auto;
-}
-#image_content ul:nth-child(3)>li:nth-child(2) img {
-	width: 100%;
-	height: auto;
-}
-#image_content ul:nth-child(4)>li:nth-child(1) {
-	width:60%;
-	height: auto;
-}
-#image_content ul:nth-child(4)>li:nth-child(1) img{
-	width: 100%;
-	height: auto;
-}
-#image_content ul:nth-child(4)>li:nth-child(2) {
-	width: 40%;
-	height: auto;
-}
-#image_content ul:nth-child(4)>li:nth-child(2) img {
-	width: 100%;
-	height: auto;
-}
-#image_content ul:last-child>li:nth-child(1) {
-	width: 50%;
-	height: 100%;
-}
-
-#image_content ul:last-child>li:nth-child(1) img {
-	width: 100%;
-	height:auto;
-}
-
-#image_content ul:last-child>li:nth-child(2) {
-	width: 50%;
-	height: auto;
-}
-
-#image_content ul:last-child>li:nth-child(2) img {
-	width: 100%;
-	height: auto;
-}
 #container #image_content ul>li img:hover{
 	width: 99.8%;
+	/* opacity:.8; */
 }
 #m_footer{
 	width: 100%;
@@ -360,16 +280,7 @@ section>#image_content ul li{
 	box-sizing: border-box;
 	visibility: hidden;
 }
-#m_footer  div:first-child{
-	width: 50%;
-	height: auto;
-	float: left;
-}
-#m_footer  div:last-child {
-	width: 50%;
-	height: auto;
-	float: left;
-}
+
 #m_footer  div span{
 	font-family : Prata,Arial,sans-serif;
 	font-size: 1.2rem;
@@ -380,7 +291,7 @@ section>#image_content ul li{
 }
 #m_footer div span+.info_text{
 	font-family: 'Futura W01 Book',
-	Arial,"å¾®è½¯é›…é»‘",
+	Arial,"微软雅黑",
 	sans-serif;
 	font-weight: normal;
 	font-size: .8rem;
@@ -389,6 +300,7 @@ section>#image_content ul li{
 }
 #m_footer div  em{
 	color: whitesmoke;
+	font-size: .8rem;
 }
 #m_footer div span~p:not(.info_text){
 	margin:0px;
