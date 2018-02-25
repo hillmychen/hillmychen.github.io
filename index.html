@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="main/css/main.css">
 	<link rel="stylesheet" type="text/css"
 	href="main/css/responsive.css">
@@ -12,7 +12,7 @@
 	<title >HughieChen's Blog</title>
 </head>
 <body >
-	<div id="github">
+	<div id="github" class="hidden-xs">
 		<a href="https://github.com/hillmychen" target="_about">github.com</a>
 	</div>
 	<section id="h_container" >
@@ -22,105 +22,138 @@
 		</div>
 		<img id="logo" src="main/img/logo.png " class="img-responsive">
 	</section>
-	<nav id="nav-banner">
-		<ul>
-			<li>
+	<nav id="nav-banner" class="navbar navbar-default">
+		<div class="container-fluid">
+		<ul class="navbar-header">
+			<a href="#mynav" class="navbar-toggle" data-toggle="collapse">
+			<li  id="mynav_toggle">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</li >
+			</a>
+		</ul>
+		<ul class="navbar-collapse collapse" id="mynav">
+			<div class="row">
+			<li class="col-xs-6 col-sm-3 ">	
+			<a href="#container" >
 				<span class="number">01
 					<b>/</b>
 				</span>
 				<span>
-					<a href="">首页</a>
+					首页
 				</span>
+				</a>
 			</li>
-			<li>
+			<li class="col-xs-6 col-sm-3">
+			<a href="#">
 				<span class="number">02
 					<b>/</b>
 				</span>
 
 				<span>
-					<a href="">码农</a>
+					码农
 				</span>
+			</a>
 			</li>
-			<li>
+			<li class="col-xs-6 col-sm-3">
+			<a href="#" >
 				<span class="number">03
 					<b>/</b>
 				</span>
-
 				<span>
-					<a href="">兴趣</a>
+					兴趣
 				</span>
-			</li>
-			<li>
+				</a>
+				</li>
+			<li class="col-xs-6 col-sm-3">
+			<a href="#" >
 				<span class="number">04
 					<b>/</b>
 				</span>
 
 				<span>
-					<a href="">关于</a>
+					关于
 				</span>
+			</a>
 			</li>
+			</div>
 		</ul>
+		</div>
 	</nav>
 	<section id="container">
 		<div id="image_content">
 			<ul>
 				<li >
-					<img src="main/img/pmmt.jpg" alt="img">
+					<img src="main/img/pmmt.jpg" alt="img" class="img-responsive">
 				</li>
 				<li>
-					<img src="main/img/dixon.jpg" alt="img">
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<img src="main/img/cgi.jpg" alt="img">
-				</li>
-				<li>
-					<img src="main/img/antoinelestage.jpg" alt="img">
+					<img src="main/img/dixon.jpg" alt="img" class="img-responsive">
 				</li>
 			</ul>
 			<ul>
 				<li>
-					<img src="main/img/lerecyclagepasapas.jpg" alt="img">
+					<img src="main/img/cgi.jpg" alt="img" class="img-responsive">
 				</li>
 				<li>
-					<img src="main/img/soulofthedeadtree.jpg" alt="img">
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<img src="main/img/artspire.jpg" alt="img">
-				</li>
-				<li>
-					<img src="main/img/depevt.jpg" alt="img">
+					<img src="main/img/antoinelestage.jpg" alt="img" class="img-responsive">
 				</li>
 			</ul>
 			<ul>
 				<li>
-					<img src="main/img/witchatt.jpg" alt="img">
+					<img src="main/img/lerecyclagepasapas.jpg" alt="img" class="img-responsive">
 				</li>
 				<li>
-					<img src="main/img/zooecomuseum.jpg" alt="img">
+					<img src="main/img/soulofthedeadtree.jpg" alt="img" class="img-responsive">
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="main/img/artspire.jpg" alt="img" class="img-responsive">
+				</li>
+				<li>
+					<img src="main/img/depevt.jpg" alt="img" class="img-responsive">
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="main/img/witchatt.jpg" alt="img" class="img-responsive">
+				</li>
+				<li>
+					<img src="main/img/zooecomuseum.jpg" alt="img" class="img-responsive">
 				</li>
 			</ul>
 		</div>
 	</section>
 	<footer id="m_footer">
-			<div>
-				<span>Now</span>
-				<p class="info_text">正在寻找一份前端的工作,走在全栈的路上</p>
-				<em>Contact me</em>
+		<div class="container">
+			<div class="row">
+				<div  class="col-xs-12 col-sm-6">
+					<span>Now</span>
+					<p class="info_text">正在寻找一份前端的工作,走在全栈的路上</p>
+					<em>Contact me</em>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<span>Oops...</span>
+					<p class="info_text">© 2017-2018 All rights reserved <i>Hughie Chen</i>.</p>
+					<p>Coded by <em>Hughie Chen</em>.</p>
+				</div>
 			</div>
-			<div>
-				<span>Oops...</span>
-				<p class="info_text">© 2017-2018 All rights reserved <i>Hughie Chen</i>.</p>
-				<p>Coded by <em>Hughie Chen</em>.</p>
-			</div>
+		</div>
 	</footer>
 <script src="main/js/jquery-3.3.1.min.js"></script>
 <script src="main/js/jquery.scrollify.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
 <script src="main/js/main.js"></script>
 <script type="text/javascript">
+  (function () {
+    var s = document.createElement("script");
+    s.onload = function () {
+      bootlint.showLintReportForCurrentDocument([]);
+    };
+    s.src = "bootstrap/js/bootlint.js";
+    document.body.appendChild(s)
+  })();
 </script>
 </body>
 </html>
