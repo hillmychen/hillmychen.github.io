@@ -1,0 +1,123 @@
+@charset "utf8";
+@import "../main/css/init.less";
+@import "../bootstrap/less/variables.less";
+#about{
+    background-image: url('../main/img/about.jpg');
+    background-position: -5% -10rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 90%;
+    height:30rem;
+    margin:3.5rem auto;
+    padding:0;
+    position: relative;
+    &::before{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media (max-width: @screen-sm-min){
+        height:25rem;
+    }
+    .about-contain{
+        height:100%;
+    }
+    .spell{
+        height:100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        @media screen and(max-width:@screen-md-min) {
+            height:auto;
+        }
+        span{
+            font-family: @about-font;
+            color: @light-coffee;
+            font-size: 90px;
+            line-height: 90px;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        .a{
+            position: absolute;
+            top: -3.8rem;
+            left: 24%;
+            @media screen and(max-width:@screen-md-min) {
+                left: 15%;
+            }
+        }
+        .b{
+            position: absolute;
+            top: -3.8rem;
+            left: 67%;
+            @media screen and(max-width:@screen-md-min) {
+                left: 30%;
+            }
+        }
+        .o{ 
+            position: absolute;
+            top: 50%;
+            left: 24%;
+            margin-top:-45px;
+            @media screen and(max-width:@screen-md-min) {
+                left: 45%;
+                top: -3.8rem;
+                margin-top:0;
+            }
+        }
+        .u{
+            position: absolute;
+            top: 50%;
+            left: 67%;
+            margin-top:-45px;
+            @media screen and(max-width:@screen-md-min) {
+                left: 60%;
+                top: -3.8rem;
+                margin-top:0;
+            }
+        }
+        .t{
+            position: absolute;
+            bottom: 0;
+            left: 24%;
+            margin-bottom:-3.8rem;
+            @media screen and(max-width:@screen-md-min) {
+                left: 75%;
+                top: -3.8rem;
+            }
+        }
+    }
+    .self-info{
+        height:100%;
+        display: table;
+        .quote{
+            position: relative;
+            vertical-align: middle;
+            display: table-cell;
+            span{
+                color:darken(@white,30%) ;
+                font-family: @font-family-base;
+                line-height: 2.2rem;
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+                display: block;
+                &:first-of-type{
+                    text-align: left;
+                    @media (max-width:@screen-md-min){
+                        text-align: center;
+                    }
+                }
+                &:last-of-type{
+                    text-align:right;
+                    margin-top: 3%;
+                    margin-right:6%;
+                    @media (max-width:@screen-md-min){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+    }
+}

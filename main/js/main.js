@@ -1,14 +1,21 @@
 $(function(){
 $(window).scroll(()=>{
+            // console.log($(window).scrollTop());
             if ($(window).scrollTop() >= ($(document).height() - $(window).height() - 50)) {
                 $("footer").css("visibility","visible").slideDown(500);
             } else{
                 $("footer").slideUp(500);
+                
+            }
+            if ($(window).scrollTop()>=400) {
+                $('#logo').hide();
+            }else{
+                $('#logo').show();
             }
             toggleTop();
     });
 function toggleTop(params) {
-    if ($(window).scrollTop()>=150) {
+    if ($(window).scrollTop()>=160) {
         if ($(window).width()>=768) {
             $('#nav-banner')[0].style.top="15%";
         }
@@ -29,7 +36,7 @@ $(window).resize(function (params) {
             $(window).scroll(()=>{
                 toggleTop();
             });
-        if ($(window).scrollTop()>=150) {
+        if ($(window).scrollTop()>=160) {
             $('#nav-banner')[0].style.top="15%";
         }else{
             $('#nav-banner')[0].style.top="75%";
@@ -39,11 +46,10 @@ $(window).resize(function (params) {
         $('#nav-banner')[0].style.top=0;
     }
 });
-
 $('#logo').hover(function(){
     $(this).attr('src','main/img/logoPink.png');
 },function(){
     $(this).attr('src','main/img/logo.png');
 });
-    
+
 });

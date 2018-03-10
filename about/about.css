@@ -1,0 +1,138 @@
+@charset "utf8";
+#about {
+  background-image: url('../main/img/about.jpg');
+  background-position: -5% -10rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 90%;
+  height: 30rem;
+  margin: 3.5rem auto;
+  padding: 0;
+  position: relative;
+}
+#about::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 768px) {
+  #about {
+    height: 25rem;
+  }
+}
+#about .about-contain {
+  height: 100%;
+}
+#about .spell {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  #about .spell {
+    height: auto;
+  }
+}
+#about .spell span {
+  font-family: Prata, Georgia, sans-serif;
+  color: #CDB586;
+  font-size: 90px;
+  line-height: 90px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#about .spell .a {
+  position: absolute;
+  top: -3.8rem;
+  left: 24%;
+}
+@media screen and (max-width: 992px) {
+  #about .spell .a {
+    left: 15%;
+  }
+}
+#about .spell .b {
+  position: absolute;
+  top: -3.8rem;
+  left: 67%;
+}
+@media screen and (max-width: 992px) {
+  #about .spell .b {
+    left: 30%;
+  }
+}
+#about .spell .o {
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  margin-top: -45px;
+}
+@media screen and (max-width: 992px) {
+  #about .spell .o {
+    left: 45%;
+    top: -3.8rem;
+    margin-top: 0;
+  }
+}
+#about .spell .u {
+  position: absolute;
+  top: 50%;
+  left: 67%;
+  margin-top: -45px;
+}
+@media screen and (max-width: 992px) {
+  #about .spell .u {
+    left: 60%;
+    top: -3.8rem;
+    margin-top: 0;
+  }
+}
+#about .spell .t {
+  position: absolute;
+  bottom: 0;
+  left: 24%;
+  margin-bottom: -3.8rem;
+}
+@media screen and (max-width: 992px) {
+  #about .spell .t {
+    left: 75%;
+    top: -3.8rem;
+  }
+}
+#about .self-info {
+  height: 100%;
+  display: table;
+}
+#about .self-info .quote {
+  position: relative;
+  vertical-align: middle;
+  display: table-cell;
+}
+#about .self-info .quote span {
+  color: #b3b3b3;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  display: block;
+}
+#about .self-info .quote span:first-of-type {
+  text-align: left;
+}
+@media (max-width: 992px) {
+  #about .self-info .quote span:first-of-type {
+    text-align: center;
+  }
+}
+#about .self-info .quote span:last-of-type {
+  text-align: right;
+  margin-top: 3%;
+  margin-right: 6%;
+}
+@media (max-width: 992px) {
+  #about .self-info .quote span:last-of-type {
+    text-align: center;
+  }
+}

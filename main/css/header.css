@@ -1,0 +1,422 @@
+#h_container {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../img/inlogia.jpg') no-repeat center center;
+  background-size: cover;
+  display: block;
+  top: 0;
+  left: 0;
+}
+#h_container #code_stock {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: auto;
+  height: auto;
+  margin-left: -88px;
+}
+#h_container #code_stock span {
+  color: #fff;
+  font-family: "Futura W01 Book", georgia, sans-serif;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 1rem;
+  display: block;
+  float: left;
+  padding: 0 10px;
+  text-transform: uppercase;
+  opacity: .85;
+}
+#h_container #code_stock span#coder {
+  border-right: 1px solid #fff;
+}
+#h_container #code_stock span#stocker {
+  margin-left: 0;
+}
+#h_container #logo {
+  display: block;
+  z-index: 1000;
+  opacity: 1;
+  position: absolute;
+  top: 22%;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+#h_container #logo:hover {
+  opacity: 1;
+  top: 21%;
+}
+#github {
+  height: 1.78rem;
+  right: 0;
+  z-index: 2;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  background: #b3a78f;
+  opacity: .8;
+  width: 180px;
+  text-align: center;
+  transform: rotateZ(45deg) translate(53px);
+  -webkit-transform: rotateZ(45deg) translate(53px);
+  -moz-transform: rotateZ(45deg) translate(53px);
+  -ms-transform: rotateZ(45deg) translate(53px);
+  cursor: pointer;
+}
+#github:hover {
+  background: #b3a78f;
+  opacity: 1;
+}
+#github a {
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #fff;
+  line-height: 1.78rem;
+}
+#nav-banner {
+  position: fixed;
+  top: 75%;
+  height: 6.42rem;
+  width: 80%;
+  z-index: 2;
+  background: transparent;
+  border: none;
+}
+#nav-banner .row {
+  height: 100%;
+  width: 100%;
+}
+#nav-banner ul {
+  height: 100%;
+  width: 100%;
+}
+#nav-banner ul li {
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+#nav-banner ul li:hover b {
+  animation: .4s  ease 0s slide forwards;
+  -webkit-animation: .4s  ease 0s slide forwards;
+  -moz-animation: .4s  ease 0s slide forwards;
+}
+#nav-banner ul li:hover .number ~ span {
+  color: #e6e3e3;
+  border-top: 0px;
+}
+#nav-banner ul li:hover .number ~ span::before {
+  height: 2px;
+  opacity: 1;
+  background: #ffe4b0;
+  transform: translateX(30px);
+  transition: transform 0.4s ease-in;
+  -webkit-transform: translateX(30px);
+  -webkit-transition: transform 0.4s ease-in;
+  -moz-transform: translateX(30px);
+  -moz-transition: transform 0.4s ease-in;
+  -ms-transform: translateX(30px);
+  -ms-transition: transform 0.4s ease-in;
+}
+#nav-banner ul li:hover .number {
+  color: #ffe4b0;
+  opacity: 1;
+}
+#nav-banner ul li .number {
+  font-family: "MaisonNeue-Bold", sans-serif;
+  font-size: 45px;
+  color: #f1d7a6;
+  opacity: .7;
+  text-align: center;
+  vertical-align: sub;
+  line-height: 3.57rem;
+  display: block;
+  position: relative;
+  height: 60%;
+  transition: all .4s ease;
+}
+#nav-banner ul li .number b {
+  color: #cdb586;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  font-weight: lighter;
+  transform: rotateZ(15deg);
+}
+#nav-banner ul li .number ~ span {
+  font-family: "Futura W01 Heavy", arial, sans-serif;
+  color: #9a958c;
+  display: block;
+  height: 40%;
+  border-top: 2px solid #9e9191;
+  letter-spacing: 2px;
+  margin-top: 2.3%;
+  padding-top: 4%;
+  transition: all 0.3s ease-in;
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #a7946f 68%, rgba(204, 179, 130, 0.5) 32%) 1 0;
+  border-image: -webkit-linear-gradient(to right, #a7946f 68%, rgba(204, 179, 130, 0.5) 32%) 1 0;
+  border-image: -moz-linear-gradient(to right, #a7946f 68%, rgba(204, 179, 130, 0.5) 32%) 1 0;
+  border-image: -ms-linear-gradient(to right, #a7946f 68%, rgba(204, 179, 130, 0.5) 32%) 1 0;
+  position: relative;
+  overflow-x: hidden;
+}
+#nav-banner ul li .number ~ span::before {
+  content: "";
+  display: table;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 0px;
+  left: -30px;
+  background: #ffe4b0;
+  opacity: 0;
+}
+@keyframes slide {
+  from {
+    left: 28%;
+    color: #b3a78f;
+  }
+  to {
+    left: 13%;
+    color: #ffe4b0;
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    left: 28%;
+    color: #b3a78f;
+  }
+  to {
+    left: 13%;
+    color: #ffe4b0;
+  }
+}
+@-moz-keyframes slide {
+  from {
+    left: 28%;
+    color: #b3a78f;
+  }
+  to {
+    left: 13%;
+    color: #ffe4b0;
+  }
+}
+@media screen and (max-width:767px){
+    section>#image_content ul{
+	width: 100%;
+    margin: 0;
+    }
+    section>#image_content ul>li{
+	width: 100%;
+    }
+    section>#image_content >ul>li>img{
+	width: 100%;
+    }
+	#h_container>div{
+		margin-top: 90%;
+	}
+	#code_stock span{
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+	}
+	#container{
+		min-height:1800px;
+		background: cornsilk;
+		z-index: 10;
+	}
+	#nav-banner{
+		top:0; 
+		z-index: 15;
+		height: 100%;
+		width: 100%;
+		margin:0;
+		padding: 0;
+	}
+	#nav-banner>div{
+		height: 100%;
+		margin:0;
+		padding: 0;
+	}
+	#nav-banner #mynav{
+		height: 100%;
+		position: absolute;
+		top: 0;
+		margin:0;
+		padding: 0;
+	}
+	#nav-banner #mynav>.row{
+		height:100%;
+		margin:0;
+		padding: 0;
+	}
+	#nav-banner #mynav li{
+		height: 50%;
+		background: rgb(41, 40, 41);
+	}
+	#nav-banner #mynav li a{
+		display:block;
+		height: auto;
+		position: relative;
+		top: 50%;
+		margin-top: -45px;
+		margin-left:11%; 
+		width: 78%;
+	}
+	#nav-banner #mynav li {
+		overflow-y: hidden;
+	}
+	#nav-banner #mynav li:nth-of-type(1) {
+		border-right:1px solid rgba(214, 214, 214,.7);
+		border-bottom:1px solid rgba(214, 214, 214,.7) ;
+	}
+	#nav-banner #mynav li:nth-of-type(2) {
+		border-bottom:1px solid rgba(214, 214, 214,.7) ;
+	}
+	#nav-banner #mynav li:nth-of-type(3) {
+		border-right:1px solid rgba(214, 214, 214,.7) ;
+	}
+	#nav-banner .navbar-header a{
+		margin-top: 5%;
+		position: fixed;
+		border-radius: 50%;
+		left:50%;
+		margin-left: -23px;
+		width: 46px;
+		height: 46px;
+		padding: 14px 20px 0px 10px ;
+		background: transparent;
+	}
+	#nav-banner .navbar-header a .icon-bar{
+		background: gainsboro;
+	}
+	#mynav_toggle{
+		height:auto;
+	}
+	.number>b{
+		display: none;
+	}
+	.number~span{
+		text-align: center;
+		font-size: 20px;
+	}
+	#nav-banner{
+		top:0;
+	}
+}
+@media screen and (min-width:768px){
+	#nav-banner{margin: 0 10%;}
+	#nav-banner ul li{
+	height:95px;
+}
+.number~span{
+		margin-left: -15%;
+		width: 75%;
+		font-size: 1.7rem;
+		text-align: left;
+}
+.number{
+	    width: 80%;
+}
+#nav-banner ul li{
+	width: 25%;
+	padding-left: 9%;
+}
+    #logo{
+        width: 80%;
+        margin-left:10%;
+    }
+    #image_content ul:first-child>li {
+	width: 50%;
+}
+#image_content ul:first-child>li img{
+	width:100%;
+	height: auto;
+	display: block;
+}
+#image_content ul:nth-child(2)>li:first-child{
+	width: 60%;
+	height: auto;
+}
+#image_content ul>li img{
+	display: block;
+}
+#image_content ul:nth-child(2)>li:first-child img{
+	height: auto;
+	width: 100%;
+}
+#image_content ul:nth-child(2)>li:nth-child(2){
+	width: 40%;
+}
+#image_content ul:nth-child(2)>li:nth-child(2) img{
+	width: 100%;
+	height: auto;
+}
+#image_content ul:nth-child(3)>li:nth-child(1) {
+	width: 40%;
+	height: auto;
+}
+#image_content ul:nth-child(3)>li:nth-child(1) img {
+	width: 100%;
+	height: auto;
+}
+#image_content ul:nth-child(3)>li:nth-child(2) {
+	width: 60%;
+	height: auto;
+}
+#image_content ul:nth-child(3)>li:nth-child(2) img {
+	width: 100%;
+	height: auto;
+}
+#image_content ul:nth-child(4)>li:nth-child(1) {
+	width:60%;
+	height: auto;
+}
+#image_content ul:nth-child(4)>li:nth-child(1) img{
+	width: 100%;
+	height: auto;
+}
+#image_content ul:nth-child(4)>li:nth-child(2) {
+	width: 40%;
+	height: auto;
+}
+#image_content ul:nth-child(4)>li:nth-child(2) img {
+	width: 100%;
+	height: auto;
+}
+#image_content ul:last-child>li:nth-child(1) {
+	width: 50%;
+	height: 100%;
+}
+
+#image_content ul:last-child>li:nth-child(1) img {
+	width: 100%;
+	height:auto;
+}
+
+#image_content ul:last-child>li:nth-child(2) {
+	width: 50%;
+	height: auto;
+}
+
+#image_content ul:last-child>li:nth-child(2) img {
+	width: 100%;
+	height: auto;
+	}
+	
+}
+@media screen and (min-width:992px){
+    
+    #logo{
+        width: 60%;
+        margin-left:20%;
+    }
+}
+@media screen and (min-width:1200px){
+    #nav-banner{
+        display:block;
+    }
+}

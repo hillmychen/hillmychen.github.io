@@ -1,0 +1,23 @@
+(()=>{
+   var link=document.createElement("link");
+   link.rel="stylesheet";
+   link.href="main/css/footer.css";
+   $('head').append(link);
+   var footer=$('#m_footer')[0];
+   footer.innerHTML=`
+   <div class="container">
+    <div class="row">
+        <div  class="col-xs-12 col-sm-6">
+            <span>Now</span>
+            <p class="info_text">正在寻找一份前端的工作,走在全栈的路上</p>
+            <em>Contact me</em>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <span>Oops...</span>
+            <p class="info_text">© 2017-2018 All rights reserved <i>Hughie Chen</i>.</p>
+            <p>Coded by <em>Hughie Chen</em>.</p>
+        </div>
+    </div>
+</div>
+   `;
+})();

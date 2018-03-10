@@ -1,0 +1,35 @@
+(()=>{
+   var link=document.createElement("link");
+   link.rel="stylesheet";
+   link.href="css/header.css";
+   $('head').append(link);
+   var footer=$('.bl_header')[0];
+   footer.innerHTML=`
+<div class="container" id="header-container">
+    <div class="row">
+        <span class="col-xs-6 col-xs-offset-3 bl-logo">技术、设计、理性</span>
+    </div>
+    <nav class="navbar" id="nav-collapse">
+        <div class="container-fluid">
+            <div class="navbar-header hidden-sm hidden-md hidden-lg " >
+                <a href="#mynav"  class="navbar-toggle pull-left" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a> 
+            </div>
+            <div class="navbar-collapse collapse " id="mynav">
+                <ul class="nav navbar-nav row">
+                    <li class="col-sm-2 col-xs-12 "><a href="#" class="nav-link"><i class="glyphicon glyphicon-home"></i></br> 首页</a>  </li>
+                    <li class="col-sm-2 col-xs-12"><a href="#" class="nav-link"><i class="glyphicon glyphicon-book"></i> </br>归档</a></li>
+                    <li class="col-sm-2 col-xs-12"><a href="#" class="nav-link"><i class="glyphicon glyphicon-th"></i></br>分类</a></li>
+                    <li class="col-sm-2 col-xs-12"><a href="#" class="nav-link"><i class="glyphicon glyphicon-tags"></i></br>标签</a></li>
+                    <li class="col-sm-2 col-xs-12"><a href="#" class="nav-link"><i class="glyphicon glyphicon-sunglasses"></i></br>关于</a></li>
+                    <li class="col-sm-2 col-xs-12"><a href="#" class="nav-link"><i class="glyphicon glyphicon-search"></i></br>搜索</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+   `;
+})();
