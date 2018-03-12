@@ -1,0 +1,49 @@
+@charset "utf8";
+@import "../main/css/init.less";
+@import "../bootstrap/less/variables.less";
+.container{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    article{
+        .article-header{
+            text-align: center;
+            .article-h{
+                font-family: @font-family-base;
+                font-weight: bold;
+                color: @darkfont-color;
+                line-height: 1.5;
+            }
+            .article-info{
+                color: @lightfont-color;
+                letter-spacing: 2px;
+                a{
+                    &:hover,&:visited{
+                        text-decoration:underline;
+                        color: @font-color;
+                    }
+                }
+            }
+        }
+        .article-content{
+            line-height: 2;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            text-align: justify;
+            .vice-header{
+                color:@gray-darker;
+                font-size:1.7rem;
+                
+            }
+            #note{
+                .from{
+                color: @brand-primary;
+                font-size: .9rem;
+                font-weight: 100;
+                }
+            }
+        }
+        
+    }
+}

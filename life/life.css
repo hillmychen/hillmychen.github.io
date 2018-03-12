@@ -1,0 +1,38 @@
+@charset "utf8";
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+.container article .article-header {
+  text-align: center;
+}
+.container article .article-header .article-h {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #3b3b3b;
+  line-height: 1.5;
+}
+.container article .article-header .article-info {
+  color: #6f6f6f;
+  letter-spacing: 2px;
+}
+.container article .article-header .article-info a:hover,
+.container article .article-header .article-info a:visited {
+  text-decoration: underline;
+  color: #555555;
+}
+.container article .article-content {
+  line-height: 2;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+.container article .article-content .vice-header {
+  color: #222222;
+  font-size: 1.7rem;
+}
+.container article .article-content #note .from {
+  color: #337ab7;
+  font-size: .9rem;
+  font-weight: 100;
+}
