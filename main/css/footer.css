@@ -3,7 +3,7 @@
   height: 200px;
   padding: 5% 8%;
   background: #222;
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   bottom: 0px;
   display: block;
@@ -35,12 +35,4 @@
 #m_footer div em {
   color: whitesmoke;
   font-size: .8rem;
-}
-@media screen and (max-width:767px){
-#m_footer{
-		height:230px;
-	}
-	#m_footer .row>div:nth-of-type(2){
-		margin-top: 30px;
-	}
 }

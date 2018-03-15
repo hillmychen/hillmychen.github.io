@@ -31,8 +31,8 @@ a:hover {
 #container {
   width: 100%;
   background: cornsilk;
-  margin: 0 0 250px 0;
-  padding: 10% 0;
+  margin: 0 ;
+  padding: 10% 0 30% 0;
   z-index: 1;
   top: 100%;
   left: 0;

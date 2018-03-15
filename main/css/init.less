@@ -7,5 +7,5 @@
 @white:white;
 @coffee:rgb(122, 107, 83);
 @light-coffee:#CDB586;
-.border(@border-width){ border:@border-width solid darken(@font-color,20%)}
+.border(@border-width,@border-color:@font-color){ border:@border-width solid darken(@border-color,20%)}
 .borderbottom(@bottomcolor:@darkfont-color){ border-bottom:1px solid @bottomcolor;}

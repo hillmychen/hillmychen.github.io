@@ -5,48 +5,99 @@
     $('head').append(link);
     var container=$('#container')[0];
     container.innerHTML=`
-            <div id="image_content">
-            <ul>
-                <li >
-                    <img src="main/img/pmmt.jpg" alt="img" class="img-responsive">
-                </li>
-                <li>
-                    <img src="main/img/dixon.jpg" alt="img" class="img-responsive">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="main/img/cgi.jpg" alt="img" class="img-responsive">
-                </li>
-                <li>
-                    <img src="main/img/antoinelestage.jpg" alt="img" class="img-responsive">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="main/img/lerecyclagepasapas.jpg" alt="img" class="img-responsive">
-                </li>
-                <li>
-                    <img src="main/img/soulofthedeadtree.jpg" alt="img" class="img-responsive">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="main/img/artspire.jpg" alt="img" class="img-responsive">
-                </li>
-                <li>
-                    <img src="main/img/depevt.jpg" alt="img" class="img-responsive">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="main/img/witchatt.jpg" alt="img" class="img-responsive">
-                </li>
-                <li>
-                    <img src="main/img/zooecomuseum.jpg" alt="img" class="img-responsive">
-                </li>
-            </ul>
+            <div id="image_content" >
+                <ul>
+                    <li >
+                        <img src="main/img/pmmt.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>PMMT</h2>
+                            <p>Web Design</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="main/img/dixon.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Batteries&nbsp;Dixon</h2>
+                            <p>art direction, web design</p>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="main/img/cgi.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>CGI</h2>
+                            <p>art direction, web design</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="main/img/antoinelestage.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Antoine&nbsp;L'Estage</h2>
+                            <p>art direction, t-shirt design</p>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="main/img/lerecyclagepasapas.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Le recyclage &nbsp;pas à pas</h2>
+                            <p>art direction, illustration, print, writing</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="main/img/soulofthedeadtree.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Soul of the Dead Tree</h2>
+                            <p>illustration</p>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="main/img/artspire.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Art-Spire</h2>
+                            <p>art direction, web design</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="main/img/depevt.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Département Evénements</h2>
+                            <p>art direction, logotype, print</p>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="main/img/witchatt.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Witchatt</h2>
+                            <p>art direction, logotype</p>
+                        </span>
+                    </li>
+                    <li>
+                        <img src="main/img/zooecomuseum.jpg" alt="img" class="img-responsive full">
+                        <span class=" intro">
+                            <h2>Zoo Eco Museum</h2>
+                            <p>art direction, print</p>
+                        </span>
+                    </li>
+                </ul>
             </div>
+            <script>
+            $(function(){
+                $('#image_content ul li').on('mouseover','img',function(){
+                    console.log(1);
+                    $(this).siblings('.intro').addClass('toggle').show(1000);
+                });
+                $('#image_content li ').on('mouseout','img',function(){
+                    $(this).siblings('.intro').removeClass('toggle').hide(1000);
+                });
+            });
+        </script>
     `;
 })();
 $('#mynav ').on("click","li",function(e) {
@@ -72,48 +123,89 @@ function goto(index) {
             case 0:
                 link.href=`main/css/${page[0]}.css`;
                    container.innerHTML=`
-                    <div id="image_content">
-                    <ul>
-                        <li >
-                            <img src="main/img/pmmt.jpg" alt="img" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="main/img/dixon.jpg" alt="img" class="img-responsive">
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="main/img/cgi.jpg" alt="img" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="main/img/antoinelestage.jpg" alt="img" class="img-responsive">
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="main/img/lerecyclagepasapas.jpg" alt="img" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="main/img/soulofthedeadtree.jpg" alt="img" class="img-responsive">
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="main/img/artspire.jpg" alt="img" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="main/img/depevt.jpg" alt="img" class="img-responsive">
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="main/img/witchatt.jpg" alt="img" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="main/img/zooecomuseum.jpg" alt="img" class="img-responsive">
-                        </li>
-                    </ul>
+                    <div id="image_content" >
+                        <ul>
+                            <li >
+                                <img src="main/img/pmmt.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>PMMT</h2>
+                                    <p>Web Design</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="main/img/dixon.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Batteries&nbsp;Dixon</h2>
+                                    <p>art direction, web design</p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="main/img/cgi.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>CGI</h2>
+                                    <p>art direction, web design</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="main/img/antoinelestage.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Antoine&nbsp;L'Estage</h2>
+                                    <p>art direction, t-shirt design</p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="main/img/lerecyclagepasapas.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Le recyclage &nbsp;pas à pas</h2>
+                                    <p>art direction, illustration, print, writing</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="main/img/soulofthedeadtree.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Soul of the Dead Tree</h2>
+                                    <p>illustration</p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="main/img/artspire.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Art-Spire</h2>
+                                    <p>art direction, web design</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="main/img/depevt.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Département Evénements</h2>
+                                    <p>art direction, logotype, print</p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="main/img/witchatt.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Witchatt</h2>
+                                    <p>art direction, logotype</p>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="main/img/zooecomuseum.jpg" alt="img" class="img-responsive full">
+                                <span class=" intro">
+                                    <h2>Zoo Eco Museum</h2>
+                                    <p>art direction, print</p>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
+                    
             `;
                 break;
             case 1:
@@ -182,7 +274,7 @@ function goto(index) {
             default:
             link.href=`${page[3]}/${page[3]}.css`;
             container.innerHTML=`
-            <div class="container-fluid" id="about">
+                <div class="container-fluid" id="about">
                 <div class="row about-contain">
                     <div class="col-md-6 col-xs-12 spell">
                         <span class="a">A</span>
@@ -199,6 +291,34 @@ function goto(index) {
                         </div>
                     </div>
                 </div>
+                    <form action="#" class="contact container-fluid">
+                        <div class="row " id="resume_content">
+                            <div class="col-xs-6 send-info " id="user_info">
+                                <label for="" class="user-base " >YOUR NAME</label>
+                                    <input type="text"  class="user-input" placeholder="你的名字" name="username">
+                                <label for="" class="user-base " > YOUR EMAIL</label>
+                                    <input type="email" class="user-input" placeholder="邮箱" name="email">
+                                <label for=""  class="user-base ">SUBJECT</label>
+                                    <input type="text" class="user-input" placeholder="主题" name="subject">
+                                <label for="" class="user-base " >TEST CODE&nbsp;<i>验证码</i></label>
+                                    <input type="text"  class="user-input" placeholder="请输入验证码" name="test_code">
+                            </div>
+                            <div class="col-xs-6  send-info" id="message">
+                                <label for="#" class="user-base">YOUR MESSAGE</label>
+                                    <textarea name="your-message" id="your-message" cols="20" rows="8" ></textarea>
+                            </div>
+                        </div>
+                        <div class="row" id="submit">
+                            <a class="col-xs-12" id="send" href="javascript:void(0);" class="btn">send&nbsp;message</a>
+                            <p>xx</p>
+                        </div>
+                        <div class="row" id="sign-api">
+                            <a href="javascript:void(0);" class="col-xs-3 social-logo" ></a>
+                            <a href="javascript:void(0);" class="col-xs-3 social-logo" ></a>
+                            <a href="javascript:void(0);" class="col-xs-3 social-logo" ></a>
+                            <a href="javascript:void(0);" class="col-xs-3 social-logo" ></a>
+                        </div>
+                    </form>
             </div>
                 `;
                 break;
@@ -217,5 +337,11 @@ function goto(index) {
     if($(`link[href*='${page[index]}.css']`).length==0){
         $('head').append(link);
     }
-    
 }
+//图片效果
+$('#image_content ul ').on('mouseover','li',function(){
+    $(this).children('.intro').addClass('toggle').show(1000);
+});
+$('#image_content  ').on('mouseout','li',function(){
+    $(this).children('.intro').removeClass('toggle').hide(1000);
+});

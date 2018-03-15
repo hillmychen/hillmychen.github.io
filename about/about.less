@@ -120,4 +120,109 @@
         }
         
     }
+    .contact{
+        height:auto;
+        width: 100%;
+        margin-top:5%;
+        display: block;
+        #resume_content{
+            height: auto;
+            padding: 0;
+            .send-info{
+                height: 476px;
+            }
+            #user_info {
+                padding-left: 0;
+                padding-right:6%;
+                &>.user-input{
+                    width: 100%;
+                    line-height: 2;
+                    text-align: left;
+                    display: block !important;
+                    color:@light-coffee;
+                    outline: none;
+                    border:none;
+                    border-bottom:2px solid @lightfont-color !important;
+                    background-color: transparent;
+                }
+            }
+            .user-base{
+                    width: 100%;
+                    line-height: 3;
+                    text-align: left;
+                    display: block !important;
+                    color: @light-coffee;
+                    margin-top: 6%;
+            }
+            #message{
+                padding-right:0;
+                padding-left:6%;
+                
+                #your-message{
+                    border:none;
+                    border-bottom: 2px solid @lightfont-color;   
+                    outline: none;
+                    width: 100%;
+                    resize: none;
+                    line-height: 3; 
+                    margin-top:2%;
+                    background-color: transparent;
+                }
+            }
+        }
+        #submit{
+                height: auto;
+                text-align: center;
+                #send{
+                    height: 100px;
+                    .border(3px,@light-coffee);
+                    display: table;
+                    line-height: 100px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-size: 2rem;
+                    color: @coffee;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                    &+p{
+                        line-height: 4;
+                    }
+                }
+            }
+        #sign-api{
+            padding: 0;
+            margin-top: 4rem;
+            .social-logo{
+                padding:0;
+                background-color: @lightfont-color;
+                height:14rem;
+                display: block;
+                &:nth-child(1){
+                    background-image: url('../main/img/social_linkedin.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                &:nth-of-type(2){
+                    background-image: url('../main/img/social_pinterest.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                &:nth-of-type(3){
+                    background-image: url('../main/img/social_behance.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                &:last-of-type{
+                    background-image: url('../main/img/social_society6.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+            }
+        }
+        div{
+            // height: 20px;
+            // width: auto;
+        }
+    }
 }
