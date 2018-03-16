@@ -205,7 +205,17 @@ function goto(index) {
                             </li>
                         </ul>
                     </div>
-                    
+                <script src="main/js/jquery-3.3.1.min.js"></script>
+                <script>
+                    $(function(){
+                        $('#image_content ul li').on('mouseover','img',function(){
+                            $(this).siblings('.intro').addClass('toggle');
+                        });
+                        $('#image_content li ').on('mouseout','img',function(){
+                            $(this).siblings('.intro').removeClass('toggle');
+                        });
+                    });
+                </script>
             `;
                 break;
             case 1:

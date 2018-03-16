@@ -51,5 +51,12 @@ $('#logo').hover(function(){
 },function(){
     $(this).attr('src','main/img/logo.png');
 });
-
+$(function(){
+        $('#image_content ul li').on('mouseover','img',function(){
+            $(this).siblings('.intro').addClass('toggle');
+        });
+        $('#image_content li ').on('mouseout','img',function(){
+            $(this).siblings('.intro').removeClass('toggle');
+        });
+    });
 });
