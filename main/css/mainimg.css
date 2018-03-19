@@ -66,7 +66,7 @@
     opacity: 0;
   }
 }
-#image_content > ul li .toggle {
+#image_content > ul li .change {
   display: block;
   opacity: .6;
 }

@@ -50,13 +50,23 @@ $('#logo').hover(function(){
     $(this).attr('src','main/img/logoPink.png');
 },function(){
     $(this).attr('src','main/img/logo.png');
-});
-$(function(){
-        $('#image_content ul li').on('mouseover','img',function(){
-            $(this).siblings('.intro').addClass('toggle');
-        });
-        $('#image_content li ').on('mouseout','img',function(){
-            $(this).siblings('.intro').removeClass('toggle');
+    });
+$('#image_content ul li').on('mouseover','img',function(){
+    let src=$(this).attr('src');
+    $('#container').css({"background-image":"url('"+src+"')",
+            "background-repeat":"no-repeat",
+            "background-size":"cover",
         });
     });
+$('#image_content ul ').on('click','li',function(){
+        $(window)[0].location.href="../design_details.html";
+    });
+// 图片效果
+$('#image_content ul').on('mouseover','li',function(){
+    console.log(1);
+    $(this).children('.intro').addClass('change').show(1000);
+});
+$('#image_content  ul').on('mouseout','li',function(){
+    $(this).children('.intro').removeClass('change').hide(1000);
+});
 });

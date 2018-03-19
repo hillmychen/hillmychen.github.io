@@ -1,5 +1,4 @@
 (()=>{
-    
     var link=document.createElement("link");
    link.rel="stylesheet";
    link.href="main/css/header.css";
