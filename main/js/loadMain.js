@@ -15,7 +15,7 @@
 })();
 $('#mynav ').on("click","li",function(e) {
        let index= $(this).index();
-        console.log(index);
+        // console.log(index);
         goto(index);
         $('#mynav').fadeOut();
         if ($(window).width()>=768) {
@@ -34,15 +34,16 @@ function goto(index) {
         // script.type="text/javascript";
         switch (index) {
             case 0:
-                link.href=`main/css/${page[0]}.css`;
-                    axios.get(`${page[0]}.html`)
-                    .then(function (response) {
-                        //   console.log(response.data);
-                        $('#container').html(response.data);
-                    })
-                    .catch(function (error) {
-                        document.write(404);
-                    });
+                // link.href=`main/css/${page[0]}.css`;
+                //     axios.get(`${page[0]}.html`)
+                //     .then(function (response) {
+                //         //   console.log(response.data);
+                //         $('#container').html(response.data);
+                //     })
+                //     .catch(function (error) {
+                //         document.write(404);
+                //     });
+                window.location.href="./index.html";
                 break;
             case 1:
                 window.location.href="./blog/index.html";

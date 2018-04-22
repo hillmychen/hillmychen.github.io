@@ -13,6 +13,13 @@ a {
         text-decoration: none;
     }
  }
+.summary{
+    text-align: justify;
+    line-height: 2;
+    margin: 0 2rem 0;
+    color: @font-color;
+    text-indent: 2rem;
+}
 canvas{
     top:0;
     position: fixed;
@@ -31,6 +38,10 @@ canvas{
         height:auto;
         margin: 0 auto; 
         padding: 0;
+        text-align: center;
+        h1{
+            width:auto;
+        }
         .article-header{
             font-family:@font-family-base;
             font-size:1.8rem;
@@ -38,12 +49,15 @@ canvas{
             text-align: center;
             color: @font-color;
             font-weight: bold;
-            display: block;
-            width: 70%;
+            display:inline-block;
+            width: auto;
             margin: 0 auto;
-            &::after{
+            position: relative;
+            &::before{
                 content:'';
-                display: block;
+                position:absolute;
+                left:0;
+                bottom: 0;
                 width:100%;
                 height: 2px;
                 background: @font-color;
@@ -52,7 +66,7 @@ canvas{
                 transition:transform .5s ease-in-out;
             }
             &:hover{
-                &::after{
+                &::before{
                     visibility: visible;
                     transform: scaleX(1);
                 }
@@ -73,13 +87,6 @@ canvas{
                 }
             }
         };
-        .summary{
-            text-align: justify;
-            line-height: 2;
-            margin: 0 2rem 0;
-            color: @font-color;
-            text-indent: 2rem;
-        }
         .full{
             display: none;
         }
@@ -98,13 +105,114 @@ canvas{
                     position: relative;
                 }
             }
-            &>#less{
-                display: none;
+            &>.less{
+                display: none;  
             }
         }
     }
 }
 
+#modal{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(68, 63, 63, 0.63); 
+    z-index:1000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    .modal-dialog{
+        width: 50%;
+        height:70%;
+        background:white;
+        border-radius:1rem;
+        padding:1rem;
+        overflow: hidden;
+        form{
+            width:80%;
+            height:auto;
+            border-bottom: 1px solid rgb(124, 124, 124);
+            line-height: 2.5;
+            cursor:pointer;
+            #search_bar{
+                width:80%;
+                border:none;
+                outline: none;
+                background:none;
+                -webkit-appearance: none;
+
+            }
+        }
+        .icon{
+            font-size:3rem;
+        }
+        .cancel{
+            position:absolute;
+            right:1rem;
+            top:1rem;    
+            cursor: pointer;
+        }
+        #success{
+            height:80%;
+            overflow-y: scroll;
+            visibility: hidden;
+            .search_result{
+                .summary();
+                margin:1rem;
+                p{
+                    border-bottom: 1px dashed rgb(122, 205, 238);            
+                }
+                h4{
+                    cursor: pointer;
+                    a:hover{
+                        color:black;
+                    }
+                }
+            }
+        }
+        #none{
+            font-size:3rem;
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-left: -1.5rem;
+            margin-top: -1.5rem;
+            visibility: hidden;
+        }
+    }
+}
+
+#modal-product{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(68, 63, 63, 0.63); 
+    z-index:1000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    .modal-dialog{
+        width: 50%;
+        height:70%;
+        background:white;
+        border-radius:1rem;
+        padding:1rem;
+        overflow: hidden;
+        font-size:2rem;
+        .cancel{
+            position:absolute;
+            right:1rem;
+            top:1rem;    
+            cursor: pointer;
+        }
+    }
+}
 @media screen and(max-width:767px){
     #nav-collapse{
         position: absolute;
@@ -127,6 +235,7 @@ canvas{
                         width:100%;
                         .nav-link{
                             text-align: left;
+                            
                         }
                     }
                 }

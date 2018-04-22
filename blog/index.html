@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/blog.css">
 	<link rel="short icon" type="image/png" href="../main/img/t-logo.png">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
     <title>HughieChen's Blog</title>
     <style>
         *{
@@ -19,33 +20,32 @@
     <header class="bl_header ">
     </header>
     <main class="main">
-        <article class="bl_article">
-            <h1><a href="/" class="article-header">EDAS再升级！全面支持Spring Cloud应用</a></h1>
-            <div class="article-info">
-                <span>发表于：2018-02-06</span>
-                <span>
-                    &nbsp;|&nbsp;
-                    分类于:<a href="#">Cloud</a></span>
-            </div> 
-            <p class="summary">阿里中间件（Aliware）的企业级分布式应用服务EDAS宣布再次升级，全面支持Spring Cloud应用。今后，使用Spring Cloud开源框架的应用可以实现0代码修改，即能在EDAS上平滑运行。目的是帮助更多用户有效节省开发运维成本，提升开发效率。</p>
-            <div class="full">
-                <p class="summary">“随着阿里中间件的迅速发展，越来越发现，用户需要的不仅仅是良好的应用服务功能，体验和广泛的适配性同样重要。于是将EDAS进行了升级，以满足使用Spring Cloud用户的需求。并且采用0代码修改方案，也就是说，应用在接入EDAS过程中几乎无感。”EDAS产品负责人倪超表示。</p>
-            </div>
-            <div class="full-article"> 
-                <a class="btn more" id="more">阅读全文&nbsp;>></a>
-                <a class="btn more" id="less"><<&nbsp;返回</a>
-            </div>
-        </article> 
-        <section>
-
-        </section>       
+      
     </main>
+    <div id="modal">
+        <div class="modal-dialog">
+            <form onsubmit="javascript:;return false;">
+                <i class="fa fa-s15 icon" ></i>
+                <input type="text" name="search_bar" id="search_bar" placeholder="请输入关键字" autofocus autocomplete="off">
+            </form>
+            <i class="fa fa-american-sign-language-interpreting icon cancel" ></i>
+            <i id="none" class="glyphicon glyphicon-thumbs-down">
+            </i>
+            <div id="success">
+            </div>
+        </div>
+    </div>
+    <div id="modal-product">
+        <div class="modal-dialog">
+           <i class="fa fa-american-sign-language-interpreting icon cancel" ></i>
+           <a href="../flyer_fight/index.html"><p><i class="glyphicon glyphicon-plane"></i>飞机大战</p></a>
+        </div>
+    </div>
     <footer class="bl_footer">
         
     </footer>
     
-<script src="../main/js/jquery-3.3.1.min.js"></script>
-<script src="../main/js/jquery.scrollify.js"></script>
+<script src="../jquery/jquery.min.js"></script>
 <script src="js/axios.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
 <script src="js/coolbg.js"></script>
