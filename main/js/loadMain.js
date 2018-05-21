@@ -34,15 +34,6 @@ function goto(index) {
         // script.type="text/javascript";
         switch (index) {
             case 0:
-                // link.href=`main/css/${page[0]}.css`;
-                //     axios.get(`${page[0]}.html`)
-                //     .then(function (response) {
-                //         //   console.log(response.data);
-                //         $('#container').html(response.data);
-                //     })
-                //     .catch(function (error) {
-                //         document.write(404);
-                //     });
                 window.location.href="./index.html";
                 break;
             case 1:
@@ -63,7 +54,6 @@ function goto(index) {
             link.href=`${page[3]}/${page[3]}.css`;
                 axios.get(`${page[3]}/${page[3]}.html`)
                     .then(function (response) {
-                        //   console.log(response.data);
                         $('#container').html(response.data);
                     })
                     .catch(function (error) {
